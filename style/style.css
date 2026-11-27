@@ -57,6 +57,77 @@ h1, h2, h3, h4, h5, h6 {
 /*style start: */
 
 * {
-    font-size: clamp(1rem, 1rem + 0.25vw, 2rem);
-    font-family: 'Norse','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-} 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-sizing: border-box;
+
+  } 
+p{
+  font-size: clamp(1rem, 1rem + 0.25dvw, 2rem);
+
+}
+body{
+  display: flex;
+  height: 100dvh;
+}
+.image-space{
+  flex: 1 0 30vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url(../resources/img/leaf.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  color: white;
+
+
+}
+.logo{
+  font-family: Norse;
+  font-weight: bold;
+  font-size: clamp(2rem, 1.5rem + 2.5dvw, 4rem);
+  background-color: gray;
+}
+.content-space{
+  background-color: gray;
+  display: flex;
+  flex-direction: column;
+}
+
+.tip-space{
+  flex:1 0 35dvh;
+  display: flex;
+}
+.tip-space p{
+  margin-top: auto;
+}
+p ,.inputs , button {
+    margin: 1vh 3vw;
+}
+
+.form{
+  flex:1 0 30dvh;
+}
+
+
+.input-space{
+    background-color: white;
+    padding-top: 5vh;
+    padding-bottom: 5vh ;
+
+}
+.text-input{
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 34%;
+}
+.inputs{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    gap: 2vh 5vw;
+}
+.free-space{
+    flex:1 1 35dvh;
+
+}

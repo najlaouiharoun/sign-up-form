@@ -1,19 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="resources/fonts/stylesheet.css">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="resources/fonts/stylesheet.css">
 
-    <link rel="stylesheet" href="style/style.css">
-    <title>Document</title>
-</head>
-<body>
-    <form action="get" >
-        <div class="test-input">
-            <label for="name">Name:</label>
-            <input type="text" name="name" >
-        </div>
-    </form>
-</body>
+        <link rel="stylesheet" href="style/style.css">
+        <title>Document</title>
+    </head>
+    <body>
+            <div class="image-space">
+                <div class="logo">
+                    odin
+                </div>
+                <div class="lisence">photo by halie west on unsplash</div>
+            </div>
+            <div class="content-space">
+                <div class="tip-space">
+                   <p>
+                     Although this is not a real online service, this can emulate a sign up form with a place holder! a place holder like me! :D
+                    </p>
+                </div>
+                
+                <form action="get" class="login-form">
+                    <div class="input-space">
+                        <p> Let's do this!</p>
+                        <div class="inputs">
+                            <div class="text-input">
+                                <label for="fname">FIRST NAME</label>
+                                <input type="text" name="fname" id="fname" >
+                            </div>
+                            <div class="text-input">
+                                <label for="lname">LAST NAME</label>
+                                <input type="text" name="lname" id="lname" >
+                            </div>
+                            <div class="text-input">
+                                <label for="email">EMAIL</label>
+                                <input type="email" name="email" id="email" >
+                            </div>
+                            <div class="text-input">
+                                <label for="tel">PHONE NUMBER</label>
+                                <input type="tel" name="tel" id="tel" >
+                            </div>
+                            <div class="text-input">
+                                <label for="password">PASSWORD</label>
+                                <input type="password" name="password" id="password" >
+                            </div>
+                            <div class="text-input">
+                                <label for="cpassword">CONFIRM PASSWORD</label>
+                                <input type="password" name="cpassword" id="cpassword" required>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="submit">
+                        Create Account
+                    </button>
+                </form>
+                <div class="free-space">
+                    
+                </div>
+            </div>
+    </body>
 </html>
