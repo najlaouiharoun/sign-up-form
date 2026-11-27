@@ -58,8 +58,6 @@ h1, h2, h3, h4, h5, h6 {
 
 * {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    box-sizing: border-box;
-
   } 
 p{
   font-size: clamp(1rem, 1rem + 0.25dvw, 2rem);
@@ -86,16 +84,16 @@ body{
   font-family: Norse;
   font-weight: bold;
   font-size: clamp(2rem, 1.5rem + 2.5dvw, 4rem);
-  background-color: gray;
+  background-color: rgb(128, 128, 128,0.5);
 }
 .content-space{
-  background-color: gray;
+  background-color: rgb(228, 227, 227);
   display: flex;
   flex-direction: column;
 }
 
 .tip-space{
-  flex:1 0 35dvh;
+  flex:1 0 30dvh;
   display: flex;
 }
 .tip-space p{
@@ -105,15 +103,19 @@ p ,.inputs , button {
     margin: 1vh 3vw;
 }
 
-.form{
-  flex:1 0 30dvh;
+.login-form{
+  flex:1 0 40dvh;
+  display: flex;
+  flex-direction: column;
+  gap: 5vh;
 }
 
 
 .input-space{
     background-color: white;
-    padding-top: 5vh;
-    padding-bottom: 5vh ;
+    padding-top: 1vh;
+    padding-bottom: 2.5vh ;
+    box-shadow: 2px 5px 3rem -2rem;
 
 }
 .text-input{
@@ -121,6 +123,22 @@ p ,.inputs , button {
   flex-direction: column;
   flex: 0 0 34%;
 }
+.text-input input{
+  border: 1px solid #E5E7EB;
+  border-radius: 5px;
+}
+.text-input:focus{
+  border-color: rgb(180, 180, 255) ;
+}
+
+.text-input input:user-invalid{
+  border-color: red ;
+}
+.text-input input:user-invalid:focus{
+  outline: none;
+  border-color: red ;
+}
+
 .inputs{
     display: flex;
     flex-wrap: wrap;
@@ -128,6 +146,12 @@ p ,.inputs , button {
     gap: 2vh 5vw;
 }
 .free-space{
-    flex:1 1 35dvh;
+    flex:1 1 30dvh;
 
+}
+.submit-button{
+  background-color: #596D48;
+  border-radius: 5px;
+  padding: 10px 30px;
+  color: white;
 }

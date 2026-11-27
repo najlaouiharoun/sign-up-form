@@ -44,17 +44,19 @@
                             </div>
                             <div class="text-input">
                                 <label for="password">PASSWORD</label>
-                                <input type="password" name="password" id="password" >
+                                <input type="password" name="password" id="password" required minlength="8" >
                             </div>
                             <div class="text-input">
                                 <label for="cpassword">CONFIRM PASSWORD</label>
-                                <input type="password" name="cpassword" id="cpassword" required>
+                                <input type="password" name="cpassword" id="cpassword" required minlength="8">
                             </div>
                         </div>
                     </div>
-                    <button type="submit">
+                    <div>
+                    <button type="submit" class="submit-button">
                         Create Account
                     </button>
+                    </div>
                 </form>
                 <div class="free-space">
                     
