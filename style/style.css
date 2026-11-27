@@ -63,6 +63,9 @@ p{
   font-size: clamp(1rem, 1rem + 0.25dvw, 2rem);
 
 }
+a{
+  color: inherit;
+}
 body{
   display: flex;
   height: 100dvh;
@@ -71,7 +74,6 @@ body{
   flex: 1 0 30vw;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   background-image: url(../resources/img/leaf.png);
   background-size: cover;
   background-repeat: no-repeat;
@@ -80,14 +82,24 @@ body{
 
 
 }
+.logo::before{
+  content: url(../resources/img/logoipsum-332.svg);
+  height: min-content;
+  width: min-content;
+}
 .logo{
   font-family: Norse;
   font-weight: bold;
   font-size: clamp(2rem, 1.5rem + 2.5dvw, 4rem);
   background-color: rgb(128, 128, 128,0.5);
+  margin-top: 20vh;
 }
+.license{
+  margin-top: auto;
+}
+
 .content-space{
-  background-color: rgb(228, 227, 227);
+  background-color: rgb(240, 240, 240);
   display: flex;
   flex-direction: column;
 }
@@ -107,7 +119,7 @@ p ,.inputs , button {
   flex:1 0 40dvh;
   display: flex;
   flex-direction: column;
-  gap: 5vh;
+  gap: 3vh;
 }
 
 
@@ -115,20 +127,24 @@ p ,.inputs , button {
     background-color: white;
     padding-top: 1vh;
     padding-bottom: 2.5vh ;
-    box-shadow: 2px 5px 3rem -2rem;
+    box-shadow: 5px 5px 3rem -2rem ;
 
 }
 .text-input{
   display: flex;
   flex-direction: column;
   flex: 0 0 34%;
+  
 }
 .text-input input{
   border: 1px solid #E5E7EB;
   border-radius: 5px;
+
 }
-.text-input:focus{
-  border-color: rgb(180, 180, 255) ;
+.text-input input:focus{
+  border-color: rgb(185, 185, 246) ;
+  box-shadow: 3px 5px 1rem -0.7rem black;
+
 }
 
 .text-input input:user-invalid{
@@ -137,6 +153,8 @@ p ,.inputs , button {
 .text-input input:user-invalid:focus{
   outline: none;
   border-color: red ;
+  box-shadow: 3px 5px 1rem -0.7rem black;
+
 }
 
 .inputs{
